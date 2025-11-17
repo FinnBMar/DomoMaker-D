@@ -8,13 +8,13 @@
     "Redis",
     "Login"
   ],
-  "homepage": "https://github.com/FinnBMar/DomoMaker-A-Start#readme",
+  "homepage": "https://github.com/FinnBMar/DomoMaker-D#readme",
   "bugs": {
-    "url": "https://github.com/FinnBMar/DomoMaker-A-Start/issues"
+    "url": "https://github.com/FinnBMar/DomoMaker-D/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FinnBMar/DomoMaker-A-Start.git"
+    "url": "git+https://github.com/FinnBMar/DomoMaker-D.git"
   },
   "license": "UNLICENSED",
   "author": "Cody Van De Mark / Austin Willoughby",
@@ -44,10 +44,15 @@
     "underscore": "^1.13.7"
   },
   "devDependencies": {
+    "@babel/core": "^7.28.5",
+    "@babel/preset-react": "^7.28.5",
+    "babel-loader": "^10.0.0",
     "eslint": "^8.57.1",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.32.0",
     "nodemon": "^3.1.10",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
     "webpack": "^5.102.1",
     "webpack-cli": "^6.0.1"
   }

@@ -1,7 +1,9 @@
+// server/models/Domo.js
 const mongoose = require('mongoose');
 const _ = require('underscore');
 
 const setName = (name) => _.escape(name).trim();
+
 const DomoSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -13,6 +15,16 @@ const DomoSchema = new mongoose.Schema({
     type: Number,
     required: true,
     min: 0,
+  },
+  height: {
+    type: Number,
+    required: true,
+    min: 0,
+  },
+  level: {
+    type: Number,
+    required: true,
+    min: 1,
   },
   owner: {
     type: mongoose.Schema.ObjectId,
@@ -28,6 +40,8 @@ const DomoSchema = new mongoose.Schema({
 DomoSchema.statics.toAPI = (doc) => ({
   name: doc.name,
   age: doc.age,
+  height: doc.height,
+  level: doc.level,
 });
 
 const DomoModel = mongoose.model('Domo', DomoSchema);
