@@ -49,36 +49,50 @@ nav:nth-child(1) {
 
 .domoForm {
     border: 2px solid #338acc;
-    height: 35px;
-    width: 900px;
-    margin-top:0px;
-    padding-top:10px;
+    width: 1200px;
+    margin: 20px auto 0 auto;
+    padding: 10px;
     background-color: #55acee;
-    border-bottom-right-radius: 4px;
-    border-top-right-radius: 4px;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 .domoForm label {
     display: inline-block;
-    width: 75px;
     margin-left: 10px;
-    font-size: 1.2em;
+    margin-right: 5px;
+    font-size: 1.1em;
     color: white;
+}
+
+.domoForm input[type="text"],
+.domoForm input[type="number"] {
+    margin-right: 15px;
+    border-radius: 4px;
+    padding: 2px 4px;
 }
 
 .makeDomoSubmit {
     transition: background-color 0.4s ease;
-    display: inline;
-    width: 90px;
     background-color: #55acee;
     border-radius: 2px;
     color: white;
     text-decoration: none;
+    border: 1px solid #338acc;
+    padding: 4px 8px;
+    margin-left: auto;   /* pushes button to the right */
+    margin-right: 10px;
+    margin-top: 5px;
+    cursor: pointer;
 }
 
 .makeDomoSubmit:hover {
     background-color: #338acc;
 }
+
 
 .mainForm {
     height: 300px;
